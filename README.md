@@ -9,7 +9,10 @@ Para Fazer acesso ao arquivo use os seguintes codigos!
 
 
 
-pip install -r requirements-dev.txt /n
-python manage.py makemigrations /n
-python manage.py migrate /n
+pip install -r requirements-dev.txt 
+
+python manage.py makemigrations
+
+python manage.py migrate
+
 python manage.py createsuperuser
