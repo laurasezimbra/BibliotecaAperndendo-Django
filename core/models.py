@@ -2,20 +2,20 @@ from django.db import models
 
 
 class Cliente(models.Model):
-    Nome = models.CharField('Nome', max_length=100)
-    Sobrenome = models.CharField('Sobrenome', max_length=100)
-    Email = models.EmailField('E-mail', max_length=100)
+    Nome = models.CharField('Nome', max_length=100, blank=False, null=False)
+    Sobrenome = models.CharField('Sobrenome', max_length=100, blank=False, null=False)
+    Email = models.EmailField('E-mail', max_length=100, blank=False, null=False)
 
     def __str__(self):
         return f'{self.Nome} {self.Sobrenome}'
 
 
 class Livro(models.Model):
-    Livro = models.CharField('Livro', max_length=50)
-    Autor = models.CharField('Autor', max_length=50)
-    Editora = models.CharField('Editora', max_length=30)
-    Preco = models.DecimalField('Preço', decimal_places=2, max_digits=4)
-    Estoque = models.IntegerField('Quantidade em Estoque')
+    Livro = models.CharField('Livro', max_length=50, blank=False, null=False)
+    Autor = models.CharField('Autor', max_length=50, blank=False, null=False)
+    Editora = models.CharField('Editora', max_length=30, blank=False, null=False)
+    Preco = models.DecimalField('Preço', decimal_places=2, max_digits=4, blank=False, null=False)
+    Estoque = models.IntegerField('Quantidade em Estoque', blank=False, null=False)
 
     def __str__(self):
         return self.Livro
