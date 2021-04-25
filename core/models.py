@@ -19,3 +19,14 @@ class Livro(models.Model):
 
     def __str__(self):
         return self.Livro
+    
+   
+class Venda(models.Model):
+    Data_venda = models.DateField(auto_now_add=True, blank=True, null=False)
+        Hora_venda = models.TimeField(auto_now_add=True, blank=True, null=False)
+        Data_hora_venda = models.DateTimeField(auto_now_add=True, blank=True, null=False)
+    Numero_venda = models.IntegerField(blank=False, null=False, verbose_name='Número da Venda')
+        Observacao = models.TextField(blank=True, null=True, verbose_name='Observação')
+        Comprovante_venda = models.FileField(upload_to='Comprovante_venda/', verbose_name='Comprovante de Venda')
+        Exemplo_upload = models.FileField(upload_to='outro_diretorio/', null=True, blank=True)
+        Venda_concluida = models.BooleanField(blank=False, null=False)
