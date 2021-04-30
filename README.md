@@ -1,4 +1,4 @@
-# BibliotecaAperndendo-Django
+# BibliotecaAprendendo-Django
 Primeiro projeto
 
 
