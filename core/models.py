@@ -16,6 +16,9 @@ class Livro(models.Model):
     Editora = models.CharField('Editora', max_length=30, blank=False, null=False)
     Preco = models.DecimalField('Preço', decimal_places=2, max_digits=4, blank=False, null=False)
     Estoque = models.IntegerField('Quantidade em Estoque', blank=False, null=False)
+    Ano = models.IntegerField('Ano de lançamento')
+    Sinopse = models.TextField()
+    
 
     def __str__(self):
         return self.Livro
