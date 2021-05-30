@@ -43,6 +43,9 @@ class Genero(models.Model):
     edicao = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
     
+     def __str__(self):
+        return self.nome
+    
  class Hq(models.Model):
     nome = models.CharField(max_lenght=200)
     autor = models.CharField(max_lenght=200)
@@ -51,6 +54,9 @@ class Genero(models.Model):
     edicao = models.IntegerField()
     ano = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
+    
+     def __str__(self):
+        return self.nome
 
 class Mangas(models.Model):
     nome = models.CharField(max_lenght=200)
@@ -60,8 +66,11 @@ class Mangas(models.Model):
     edicao = models.IntegerField()
     ano = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
+    
+     def __str__(self):
+        return self.nome
 
-class Editora(models.Model):
+class Record(models.Model):
     nome = models.CharField(max_lenght=200)
     autor = models.CharField(max_lenght=200)
     sinopse = models.TextField()
@@ -78,6 +87,9 @@ class Darkside(models.Model):
     edicao = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
     disponivel = models.CharField(max_lenght=10)
+    
+     def __str__(self):
+        return self.nome
 
 class Intrinseca(models.Model):
     nome = models.CharField(max_lenght=200)
@@ -87,6 +99,9 @@ class Intrinseca(models.Model):
     edicao = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
     disponivel = models.CharField(max_lenght=10)
+    
+     def __str__(self):
+        return self.nome
 
 class Rocco(models.Model):
     nome = models.CharField(max_lenght=200)
@@ -96,6 +111,9 @@ class Rocco(models.Model):
     edicao = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
     disponivel = models.CharField(max_lenght=10)
+    
+     def __str__(self):
+        return self.nome
 
 class Fundamento(models.Model):
     nome = models.CharField(max_lenght=200)
@@ -105,3 +123,6 @@ class Fundamento(models.Model):
     edicao = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
     disponivel = models.CharField(max_lenght=10)
+    
+     def __str__(self):
+        return self.nome
