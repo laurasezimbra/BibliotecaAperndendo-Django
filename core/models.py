@@ -30,3 +30,12 @@ class Venda(models.Model):
     Comprovante_venda = models.FileField(upload_to='Comprovante_venda/', verbose_name='Comprovante de Venda')
     Exemplo_upload = models.FileField(upload_to='outro_diretorio/', null=True, blank=True)
     Venda_concluida = models.BooleanField(blank=False, null=False)
+    
+class Genero(models.Model):
+    nome = models.CharField(max_lenght=200)
+    autor = models.CharField(max_lenght=200)
+    sinopse = models.TextField()
+    ano = models.IntegerField()
+    editora = models.CharField(max_lenght=200)
+    edicao = models.IntegerField()
+    preco = models.DecimalField(decimal_places=2, max_digits=4)
