@@ -39,3 +39,66 @@ class Genero(models.Model):
     editora = models.CharField(max_lenght=200)
     edicao = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
+    
+ class Hq(models.Model):
+    nome = models.CharField(max_lenght=200)
+    autor = models.CharField(max_lenght=200)
+    idioma = models.CarField(max_lenght=200)
+    paginas = models.IntegerField()
+    edicao = models.IntegerField()
+    ano = models.IntegerField()
+    preco = models.DecimalField(decimal_places=2, max_digits=4)
+
+class Mangas(models.Model):
+    nome = models.CharField(max_lenght=200)
+    autor = models.CharField(max_lenght=200)
+    idioma = models.CarField(max_lenght=200)
+    paginas = models.IntegerField()
+    edicao = models.IntegerField()
+    ano = models.IntegerField()
+    preco = models.DecimalField(decimal_places=2, max_digits=4)
+
+class Editora(models.Model):
+    nome = models.CharField(max_lenght=200)
+    autor = models.CharField(max_lenght=200)
+    sinopse = models.TextField()
+    ano = models.IntegerField()
+    edicao = models.IntegerField()
+    preco = models.DecimalField(decimal_places=2, max_digits=4)
+    disponivel = models.CharField(max_lenght=10)
+
+class Darkside(models.Model):
+    nome = models.CharField(max_lenght=200)
+    autor = models.CharField(max_lenght=200)
+    sinopse = models.TextField()
+    ano = models.IntegerField()
+    edicao = models.IntegerField()
+    preco = models.DecimalField(decimal_places=2, max_digits=4)
+    disponivel = models.CharField(max_lenght=10)
+
+class Intrinseca(models.Model):
+    nome = models.CharField(max_lenght=200)
+    autor = models.CharField(max_lenght=200)
+    sinopse = models.TextField()
+    ano = models.IntegerField()
+    edicao = models.IntegerField()
+    preco = models.DecimalField(decimal_places=2, max_digits=4)
+    disponivel = models.CharField(max_lenght=10)
+
+class Rocco(models.Model):
+    nome = models.CharField(max_lenght=200)
+    autor = models.CharField(max_lenght=200)
+    sinopse = models.TextField()
+    ano = models.IntegerField()
+    edicao = models.IntegerField()
+    preco = models.DecimalField(decimal_places=2, max_digits=4)
+    disponivel = models.CharField(max_lenght=10)
+
+class Fundamento(models.Model):
+    nome = models.CharField(max_lenght=200)
+    autor = models.CharField(max_lenght=200)
+    sinopse = models.TextField()
+    ano = models.IntegerField()
+    edicao = models.IntegerField()
+    preco = models.DecimalField(decimal_places=2, max_digits=4)
+    disponivel = models.CharField(max_lenght=10)
