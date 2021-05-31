@@ -126,3 +126,7 @@ class Fundamento(models.Model):
     
      def __str__(self):
         return self.nome
+    
+ class FAQ(models.Model):
+    pergunta = TextField()
+    resposta = CharField(max_lenght=200)
