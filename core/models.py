@@ -70,7 +70,7 @@ class Mangas(models.Model):
      def __str__(self):
         return self.nome
 
-class Record(models.Model):
+class Paralela(models.Model):
     nome = models.CharField(max_lenght=200)
     autor = models.CharField(max_lenght=200)
     sinopse = models.TextField()
