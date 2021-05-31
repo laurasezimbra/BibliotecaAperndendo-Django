@@ -75,7 +75,7 @@ class Record(models.Model):
     autor = models.CharField(max_lenght=200)
     sinopse = models.TextField()
     ano = models.IntegerField()
-    edicao = models.IntegerField()
+    genero = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
     disponivel = models.CharField(max_lenght=10)
 
@@ -84,7 +84,7 @@ class Darkside(models.Model):
     autor = models.CharField(max_lenght=200)
     sinopse = models.TextField()
     ano = models.IntegerField()
-    edicao = models.IntegerField()
+    genero = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
     disponivel = models.CharField(max_lenght=10)
     
@@ -96,7 +96,7 @@ class Intrinseca(models.Model):
     autor = models.CharField(max_lenght=200)
     sinopse = models.TextField()
     ano = models.IntegerField()
-    edicao = models.IntegerField()
+    genero = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
     disponivel = models.CharField(max_lenght=10)
     
@@ -108,7 +108,7 @@ class Rocco(models.Model):
     autor = models.CharField(max_lenght=200)
     sinopse = models.TextField()
     ano = models.IntegerField()
-    edicao = models.IntegerField()
+    genero = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
     disponivel = models.CharField(max_lenght=10)
     
@@ -120,7 +120,7 @@ class Fundamento(models.Model):
     autor = models.CharField(max_lenght=200)
     sinopse = models.TextField()
     ano = models.IntegerField()
-    edicao = models.IntegerField()
+    genero = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
     disponivel = models.CharField(max_lenght=10)
     
