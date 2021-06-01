@@ -34,7 +34,8 @@ class Venda(models.Model):
     Exemplo_upload = models.FileField(upload_to='outro_diretorio/', null=True, blank=True)
     Venda_concluida = models.BooleanField(blank=False, null=False)
     
-class Genero(models.Model):
+#genero    
+class Ficcao(models.Model):
     nome = models.CharField(max_lenght=200)
     autor = models.CharField(max_lenght=200)
     sinopse = models.TextField()
@@ -54,6 +55,7 @@ class Genero(models.Model):
     edicao = models.IntegerField()
     ano = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
+    disponivel = models.CharField(max_lenght=20)
     
      def __str__(self):
         return self.nome
@@ -66,6 +68,7 @@ class Mangas(models.Model):
     edicao = models.IntegerField()
     ano = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
+    disponivel = models.CharField(max_lenght=20)
     
      def __str__(self):
         return self.nome
