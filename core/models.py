@@ -36,11 +36,11 @@ class Venda(models.Model):
     
 #genero    
 class Ficcao(models.Model):
-    nome = models.CharField(max_lenght=200)
-    autor = models.CharField(max_lenght=200)
+    nome = models.TextField()
+    autor = models.TextField()
     sinopse = models.TextField()
     ano = models.IntegerField()
-    editora = models.CharField(max_lenght=200)
+    editora = models.TextField()
     edicao = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
     
@@ -48,88 +48,88 @@ class Ficcao(models.Model):
         return self.nome
     
  class Hq(models.Model):
-    nome = models.CharField(max_lenght=200)
-    autor = models.CharField(max_lenght=200)
-    idioma = models.CarField(max_lenght=200)
+    nome = models.TextField()
+    autor = models.TextField()
+    idioma = models.TextField
     paginas = models.IntegerField()
     edicao = models.IntegerField()
     ano = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
-    disponivel = models.CharField(max_lenght=20)
+    disponivel = models.TextField()
     
      def __str__(self):
         return self.nome
 
 class Mangas(models.Model):
-    nome = models.CharField(max_lenght=200)
-    autor = models.CharField(max_lenght=200)
-    idioma = models.CarField(max_lenght=200)
+    nome = models.TextField()
+    autor = models.TextField()
+    idioma = models.TextField()
     paginas = models.IntegerField()
     edicao = models.IntegerField()
     ano = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
-    disponivel = models.CharField(max_lenght=20)
+    disponivel = models.TextField()
     
      def __str__(self):
         return self.nome
 
 class Paralela(models.Model):
-    nome = models.CharField(max_lenght=200)
-    autor = models.CharField(max_lenght=200)
+    nome = models.TextField()
+    autor = models.TextField()
     sinopse = models.TextField()
     ano = models.IntegerField()
     genero = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
-    disponivel = models.CharField(max_lenght=10)
+    disponivel = models.TextField()
 
 class Darkside(models.Model):
-    nome = models.CharField(max_lenght=200)
-    autor = models.CharField(max_lenght=200)
+    nome = models.TextField()
+    autor = models.TextField()
     sinopse = models.TextField()
     ano = models.IntegerField()
     genero = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
-    disponivel = models.CharField(max_lenght=10)
+    disponivel = models.TextField()
     
      def __str__(self):
         return self.nome
 
 class Intrinseca(models.Model):
-    nome = models.CharField(max_lenght=200)
-    autor = models.CharField(max_lenght=200)
+    nome = models.TextField()
+    autor = models.TextField()
     sinopse = models.TextField()
     ano = models.IntegerField()
     genero = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
-    disponivel = models.CharField(max_lenght=10)
+    disponivel = models.TextField()
     
      def __str__(self):
         return self.nome
 
 class Rocco(models.Model):
-    nome = models.CharField(max_lenght=200)
-    autor = models.CharField(max_lenght=200)
+    nome = models.TextField()
+    autor = models.TextField
     sinopse = models.TextField()
     ano = models.IntegerField()
     genero = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
-    disponivel = models.CharField(max_lenght=10)
+    disponivel = models.TextField()
     
      def __str__(self):
         return self.nome
 
 class Fundamento(models.Model):
-    nome = models.CharField(max_lenght=200)
-    autor = models.CharField(max_lenght=200)
+    nome = models.TextField()
+    autor = models.TextField()
     sinopse = models.TextField()
     ano = models.IntegerField()
     genero = models.IntegerField()
     preco = models.DecimalField(decimal_places=2, max_digits=4)
-    disponivel = models.CharField(max_lenght=10)
+    disponivel = models.TextField()
     
      def __str__(self):
         return self.nome
     
  class FAQ(models.Model):
     pergunta = TextField()
-    resposta = CharField(max_lenght=200)
+    resposta = TextField()
