@@ -35,6 +35,18 @@ class Venda(models.Model):
     Venda_concluida = models.BooleanField(blank=False, null=False)
     
 #genero    
+class Fantasia(models.Model):
+    nome = models.TextField()
+    autor = models.TextField()
+    sinopse = models.TextField()
+    ano = models.IntegerField()
+    editora = models.TextField()
+    edicao = models.IntegerField()
+    preco = models.DecimalField(decimal_places=2, max_digits=4)
+    
+    def __str__(self):
+        return self.nome
+    
 class Ficcao(models.Model):
     nome = models.TextField()
     autor = models.TextField()
